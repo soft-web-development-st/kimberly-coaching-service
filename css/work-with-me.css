@@ -1,0 +1,336 @@
+/* Nav, Social Media, Footer styles are in style.css */
+
+/* ==================
+    Work With Me Main
+    ================= */
+/* Styles the layout and contents as a whole in this section */
+.work-with-me-main {
+    background: linear-gradient(to bottom, var(--theme-linebreak-color) 30%, var(--white) 0%);
+    min-height: 625px;
+}
+
+/* Styles the content layout */
+.work-with-me-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+/* Styles left side of grid layout */
+.work-with-me-contents-left {
+    position: relative;
+}
+.work-with-me-contents-left h4 {
+    position: absolute;
+    z-index: 2;
+    top: 5rem;
+    right: 2rem; 
+    color: white;
+    font-family: var(--script-font-family);
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 300;
+    transform: rotate(-12deg);
+}
+
+.work-with-me-contents-left img {
+    width: 100%;
+    height: 32rem;
+    margin-top: 3rem;
+    z-index: -1;
+}
+
+/* Styles right side of grid layout */
+.work-with-me-contents-right h2 {
+    font-family: var(--barlow-font-family);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 4.5rem 0;
+}
+
+.work-with-me-contents-right h2 span {
+    font-family: var(--script-font-family);
+    text-transform: capitalize;
+}
+
+.work-with-me-contents-right .theme-h3 {
+    margin-top: 6rem;
+    color: var(--theme-blue-color)
+}
+
+
+.work-with-me-contents-right p,
+.work-together p {
+    margin-top: 1rem;
+    opacity: .8;
+}
+
+
+/* ===========
+    Imagine If
+    ========== */
+/* Styles the layout and contents as a whole in this section */
+.imagine-if {
+    padding: 3rem 7rem;
+    background-color: var(--theme-light-brown-background-color);
+    color: var(--theme-blue-color);
+}
+
+/* Styles section title */
+.imagine-if h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Styles the content layout */
+.imagine-if-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 4rem;
+}
+
+.imagine-if-contents-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagine-if-contents-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--font-grey);
+    padding: .8em;
+    font-size: clamp(.9rem, 2vw, 1.5rem);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.imagine-if-contents-item p {
+    color: var(--theme-blue-color);
+}
+
+
+/* ==============
+    Work Together
+    ============= */
+/* Styles the layout and contents as a whole in this section */
+.work-together {
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+    
+}
+/* Styles section title */
+.work-together p {
+    width: 90%;
+    margin: 1rem auto 3rem auto;
+    
+}
+
+/* Styles the content layout */
+.work-together-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+    z-index: 2;
+}
+
+.work-together-contents .linebreak {
+    border-top: 1px solid var(--theme-linebreak-color-3);
+    border-bottom: 1px solid var(--theme-linebreak-color-3);
+    padding: 3px 0;
+    position: absolute;
+    top:16rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 1px;
+}
+
+.work-together-item {
+    padding: 4rem 3rem;
+    background-color: var(--theme-blue-color);
+}
+
+.work-together-item a {
+    color: var(--theme-gold-color);
+    background-color: var(--white);
+    text-transform: uppercase;
+    padding: 0.5350em 2.2500em;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    transition: all 500ms ease;
+}
+
+.work-together-item a:hover {
+    color: var(--white);
+    background-color: var(--theme-gold-color);
+    transform: scale(1.1);
+}
+
+
+/* =============
+   Media Queries
+   ============= */
+@media screen and (max-width: 1050px) {
+    .imagine-if {
+        padding: 3rem 1rem;
+    }
+
+    .imagine-if-contents {
+        gap: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .work-with-me-main {
+        background: linear-gradient(to bottom, var(--theme-linebreak-color) 25%, var(--white) 0%);
+        min-height: 570px;
+    }
+
+    .work-with-me-contents {
+        gap: 2rem;
+    }
+
+    .work-with-me-contents-left img {
+        height: 28rem;
+    }
+
+    .work-with-me-contents-right h2 {
+        margin: 3rem 0;
+    }
+
+    .work-with-me-contents-right .theme-h3 {
+        margin-top: 3rem;
+    }
+
+    .imagine-if {
+        padding: 2rem 1rem;
+    }
+
+    .imagine-if h3 {
+        margin-bottom: 0;
+    }
+
+    .imagine-if-contents {
+        gap: 1rem;
+    }   
+}
+
+@media screen and (max-width: 674px) {
+    /* Work With Me */
+    .work-with-me-contents {
+        gap: 1rem;
+    }
+
+    .work-with-me-contents-right {
+        margin-right: .5rem;
+    }
+
+    .work-with-me-contents-right h2 {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .work-with-me-contents-right .theme-h3 {
+        margin-top: 2.5rem;
+        line-height: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    /* Imagine If You Could */
+    .imagine-if-contents {
+        gap: 0 1rem;
+    }
+
+    /* Work Togehter */
+    .work-together {
+        margin: 2rem 0;
+    }    
+
+    .work-together-contents {
+        margin: auto;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .work-together p {
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .work-with-me-main {
+        background: linear-gradient(to bottom, var(--theme-linebreak-color) 25%, var(--white) 0%);
+        min-height: 370px;
+    }
+
+    .work-with-me-contents {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .work-with-me-contents-left img {
+        height: 20rem;
+    }
+
+    .work-with-me-contents-right {
+        text-align: center;
+    }
+
+    .work-with-me-contents-right h2 {
+        color: var(--theme-blue-color);
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .work-with-me-contents-right .theme-h3 {
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .work-with-me-contents-right p:last-of-type {
+        margin-bottom: 3rem;
+    }
+
+    /* Imagine If You Could */
+    .imagine-if-contents {
+        grid-template-columns: 2fr;
+        gap: 0;
+    }
+
+    .imagine-if-contents-item i {
+        margin-top: 1rem;
+    }
+
+    .work-together-contents {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imagine-if {
+        padding: 2rem 0;
+    }
+
+    .work-together-contents {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .work-together-contents .linebreak {
+        display: none;
+    }
+
+}
